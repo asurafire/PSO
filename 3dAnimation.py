@@ -23,7 +23,6 @@ ax.set_xlim([-1.5, 1.5])
 ax.set_ylim([-1.5, 1.5])
 ax.set_zlim([-1.5, 15])
 
-# second option - move the point position at every frame
 def update_point(n, x, y, z, points):
     offset = 0
     for p in points:
