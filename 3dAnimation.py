@@ -34,7 +34,9 @@ def update_point(n, x, y, z, points):
         offset += 25
     return points
 
-anim=animation.FuncAnimation(fig, update_point, frames=1050, interval=10,  fargs=(x, y, z, points))
+anim=animation.FuncAnimation(fig, update_point,
+                             frames=1050, interval=10,
+                             fargs=(x, y, z, points))
 #anim.save('basic_animation.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
 plt.show()
 
