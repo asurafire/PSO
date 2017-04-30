@@ -40,6 +40,6 @@ def animate(i, plottels):
         p.set_3d_properties(f(particles[n].position[0], particles[n].position[1]))
     return plottels,
 
-anim = animation.FuncAnimation(fig, animate, frames=50, interval=200, fargs=(plottels,))
-#anim.save('rastrigin.mp4', fps=30, extra_args=['-vcodec', 'libx264'])
+anim = animation.FuncAnimation(fig, animate, frames=20, interval=1000, fargs=(plottels,))
+anim.save('rastrigin.mp4', fps=10, extra_args=['-vcodec', 'libx264'])
 plt.show()
