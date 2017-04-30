@@ -1,8 +1,7 @@
-from time import sleep
-import numpy as np
-from numpy import sin, cos, e
+from random import random
+from Functions import *
 import matplotlib.pyplot as plt
-from random import random, seed
+import numpy as np
 
 
 class Particle:
@@ -67,12 +66,3 @@ class Particle:
         plt.plot([self.position[0]], [self.position[1]],"ob")
 
 
-def fun1(x, y):
-    return sin(x) * cos(y)
-
-def fun2(x, y):
-    return (e**(cos(y) * sin(x) * 2)  +  x + y + sin(x) * 5)**3
-def rosenbrock(x, y):
-    return ((1-x)**2 + 100 * (y - x**2)**2)
-def rastrigin(x,y):
-    return 20 + (x * x - 10 * cos(2 * np.pi * x)) + (y * y - 10 * cos(2 * np.pi * y))
